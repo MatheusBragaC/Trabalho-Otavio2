@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d3e50;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f4f4f4;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+}
+
+.tab.active {
+    background-color: #eee;
+    border-bottom: 2px solid #000;
+}
+
+.content {
+    padding: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.pagination span {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 0 0 48%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card:not(:nth-child(2n)) {
+    margin-right: 0;
+}
+
